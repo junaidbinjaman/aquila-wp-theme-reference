@@ -1,1 +1,1 @@
-# WordPress theme Aquala
+# WordPress theme Aquila
