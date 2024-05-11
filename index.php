@@ -7,8 +7,11 @@
 
 get_header();
 ?>
+
 <div class="content">
-	Content
+	<h1 class="text-primary-emphasis h2">
+		Hello, World
+	</h1>
 </div>
 
 <?php
