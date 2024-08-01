@@ -1,7 +1,10 @@
 {
     "cSpell.words": [
+        "autoloader",
         "bloginfo",
-        "junaid"
+        "junaid",
+        "phpcs",
+        "untrailingslashit"
     ],
 
     // phpcs and phpcbf settings
