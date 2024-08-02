@@ -21,6 +21,7 @@ class AQUILA_THEME {
 	protected function __construct() {
 
 		Assets::get_instance();
+		Menus::get_instance();
 
 		// load classes.
 		$this->setup_hooks();
@@ -65,6 +66,24 @@ class AQUILA_THEME {
 			'default-repeat'     => 'no-repeat',
 			'default-attachment' => 'scroll',
 		);
+
 		add_theme_support( 'custom-background', $bg_defaults );
+
+		add_theme_support( 'post-thumbnails' );
+
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		add_theme_support( 'automatic-feed-links' );
+
+		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+
+		add_theme_support( 'wp-block-styles' );
+
+		add_theme_support( 'align-wide' );
+
+		global $content_width;
+		if ( ! isset( $content_width ) ) {
+			$content_width = 1240;
+		}
 	}
 }
